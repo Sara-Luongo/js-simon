@@ -1,8 +1,12 @@
-let CountDown = document.querySelector('#countdown')
+let countDown = document.querySelector('#countdown')
 const listaNumeri = document.querySelector('#numbers-list')
 const inputRisposta = document.querySelector('#answers-form')
 const istruzioniGiocatore = document.querySelector('#instructions')
+const inputNumeriGiocatore = document.querySelectorAll('input')
+const bottoneConferma = document.querySelector('#bottone-conferma')
+const risultatoIndovinati = document.querySelector('#message')
 const numeriRandom = []
+const numeriGiocatore = []
 let timer = 5
 
 
@@ -13,5 +17,7 @@ for (let i = 1; i <= 5; i++) {
     listaNumeri.innerHTML += ` ${numeroEstratto} `;
 };
 
+
+bottoneConferma.addEventListener('click', confrontoNumeri)
 
 const timerId = setInterval(contenitoreCountDown, 1000);
