@@ -1,7 +1,9 @@
 let CountDown = document.querySelector('#countdown')
 const listaNumeri = document.querySelector('#numbers-list')
+const inputRisposta = document.querySelector('#answers-form')
+const istruzioniGiocatore = document.querySelector('#instructions')
 const numeriRandom = []
-let timer = 30
+let timer = 5
 
 
 // creato ciclo for che genera 5 numeri casuali da 1 a 50
